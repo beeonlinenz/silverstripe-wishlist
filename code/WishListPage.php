@@ -59,7 +59,7 @@ class WishListPage extends Page
 	function requireDefaultRecords() {
 		if (!self::inst() && Config::inst()->get('WishListPage', 'auto_create_page')) {
 			$rec = new WishListPage();
-			$rec->Title = 'Wish List';
+			$rec->Title =_t('WishList.TITLE');
 			$rec->ShowInSearch = false;
 			$rec->ShowInMenu = false;
 			$rec->CanViewType = 'LoggedInUsers';
@@ -239,7 +239,7 @@ class WishListPage_Controller extends Page_Controller
 	 */
 	function saveList(array $data, Form $form) {
 		if (!isset($data['Title']) || trim($data['Title']) == '') {
-			$this->wishList->Title = 'Wish List';
+			$this->wishList->Title = _t('WishList.TITLE');
 		} else {
 			$this->wishList->Title = $data['Title'];
 		}

@@ -1,0 +1,8 @@
+en:
+  WishList:
+    TITLE: 'Wish List'
+    ADDLINK: 'Add to Wish List'
+    REMOVELINK: 'Remove from Wish List'
+    REMOVEALL: 'Remove All Items'
+    DELETELIST: 'Delete List'
+    CREATENEWLIST: 'Create New List'

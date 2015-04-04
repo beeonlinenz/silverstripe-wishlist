@@ -37,7 +37,7 @@ class WishList extends DataObject
 
 			if (!$lastUsed || !$lastUsed->exists()) {
 				self::$current = new WishList(array(
-					'Title'     => 'Wish List',
+					'Title'     => _t('WishList.TITLE'),
 					'OwnerID'   => Member::currentUserID(),
 				));
 			} else {
